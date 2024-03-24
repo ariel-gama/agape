@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Limpeza de Piscinas</title>
+</head>
+
+<body>
+    <header>
+        <img src="imgs/logo_completo.png" alt="">
+        <div class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#galeria">Galeria</a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="title">
+            <h1>Ágape</h1>
+            <p>Limpeza de Piscinas</p>
+            <a href="#contato"><button class="botao">Entre em Contato</button></a>
+        </div>
+        <div class="mini-banner">
+            <img src="imgs/mulher_na_agua.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="sessao-sobre">
+        <div class="imagem-sobre">
+            <img src="imgs/agape_piscinas.png" alt="banner da empresa ágape piscinas">
+        </div>
+
+        <div class="descricao" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>
+                Ágape Limpeza de Piscinas é localizada em São Paulo SP. Com o compromisso com a excelência e a satisfação do cliente,
+                nos esforçamos para fornecer serviços de limpeza de primeira linha para todos os tipos de piscinas.
+                Confie na Ágape Piscinas para todas a suas necessidades de limpeza de piscinas.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="sessao-beneficios" id="beneficios">
+        <div class="beneficios-titulo">
+            <h2>Benefícios de uma Piscina limpa</h2>
+            <p>
+                Manter uma piscina limpa e saudável promove diversos benefícios. Veja alguns deles:
+            </p>
+        </div>
+        <div class="beneficios-card">
+            <div class="card">
+                <img src="imgs/pes_na_agua.jpg" alt="pés na piscina limpa">
+                <h3>Saúde</h3>
+                <h4>Prevenção de Doenças</h4>
+                <p>
+                    Piscinas sujas podem abrigar bactérias, vírus e microorganismos que causam doenças. A água contaminada pode levar a
+                    infecções de pele, gastroenterites e outras doenças transmitidas pela água.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="imgs/economia.jpg" alt="cofre de porquinho">
+                <h3>Economia</h3>
+                <h4>Reduz manutenção de equipamentos</h4>
+                <p>
+                    A sujeira e os detritos podem causar danos aos equipamentos da piscina, como bombas e filtros. A manutenção regular
+                    ajuda a prolongar a vida útil desses componentes, evitando custos desnecessários de reparo ou substituição.
+                </p>
+            </div>
+
+            <div class="card card-leis">
+                <img src="imgs/leis.jpg" alt="estátula de mulher com balança e espada">
+                <h3>Legislação</h3>
+                <h4>Cumprimiento de Normas</h4>
+                <p>
+                    Em muitas áreas, existem regulamentações específicas para a qualidade da água em piscinas públicas e privadas. Manter a
+                    piscina limpa e em conformidade com essas normas é essencial para evitar penalidades e garantir a segurança dos
+                    usuários.
+                </p>
+            </div>
+        </div>
+    </div>   
+
+    
+    <div class="galeria-titulo" id="galeria">
+        <h2>Veja algumas imagens de nossos serfiços</h2>
+    </div>
+    <div class="galeria">
+        <div class="imagem">
+            <img src="imgs/imagem9.jpeg" alt="piscina um">
+        </div>
+        <div class="imagem">
+            <img src="imgs/imagem3_resized.jpeg" alt="piscina dois" >
+        </div>
+        <div class="imagem">
+            <img src="imgs/imagem4.jpeg" alt="piscina três">
+        </div>
+        <div class="imagem">
+            <img src="imgs/imagem5.jpeg" alt="piscina quatro">
+        </div>
+        <div class="imagem">
+            <img src="imgs/imagem6.jpeg" alt="piscina cinco">
+        </div>
+        <div class="imagem">  
+            <img src="imgs/imagem7.jpeg" alt="piscnia seis">          
+        </div>    
+    </div>
+
+    <footer>
+        <div class="logotipo">
+            <img src="imgs/logo_completo.png" alt="">
+        </div>
+        <div class="contato">
+            <h4>Entre em contato</h4>
+            <p id="contato">Celular:<a href="tel:959103425">95910-3425</a></p>
+        </div>        
+    </footer>
+
+
+  
+
+ 
+</div>
+
+
+<script>
+    // menu scrool 
+    document.querySelectorAll('.menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+</script>
+
+
+    <!-- botão whatsapp -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5511959103425?text=mande%20uma%20mensagem%20para%20%C3%81gape%20Limpeza%20de%20piscinas"
+        style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
